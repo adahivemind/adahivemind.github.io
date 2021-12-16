@@ -11,8 +11,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-#theme: jekyll-agency
-remote_theme: raviriley/agency-jekyll-theme
+theme: jekyll-agency
+#remote_theme: raviriley/agency-jekyll-theme
 
 url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,9 +21,9 @@ title      : HiveMind
 email      : adahivemind@gmail.com #this is also the email contact forms will go to
 description: "The Applied Data Analysis Project of Team HiveMind"
 author     : ADA HiveMind Team
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+logo:     #optional, defaults to site title
+  path: assets/img/logo.png
+  height: 36 #height in px, defaults to 52px
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 
