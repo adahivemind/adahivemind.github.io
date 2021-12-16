@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
-  spec.name     = "jekyll-hivemind"
-  spec.version  = "1.0.0"
+  spec.name     = "jekyll-agency"
+  spec.version  = "1.1.0"
   
   spec.authors  = ["HiveMind"]
   
