@@ -22,11 +22,11 @@
     <div class="container">
       <ol class="col-lg-8 mx-auto text-left large text-muted" type="1">
         {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
-          <li><a href="{{ dataset.link }}" target="_blank">{{ dataset.title }}</a></li>
+          <li><a href="#{{ dataset.section }}">{{ dataset.title }}</a></li>
         {% endfor %}
       </ol>
       {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
-      <div class="row">
+      <div class="row" id="{{ dataset.section }}">
         <div class="col-lg-8 mx-auto text-center">
           <h2 class="section-subheading">{{ dataset.title | default: "Dataset" }}</h2>
         </div>

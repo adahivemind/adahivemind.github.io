@@ -34,7 +34,7 @@ en: &DEFAULT_EN
 
   timeline:
     title: "Introduction"
-    text: "Lorem ipsum timeline"
+    text: "An introduction of the steps taken on a timeline"
     section: intro
     # left is the default
     #start_align: "left"
@@ -46,26 +46,16 @@ en: &DEFAULT_EN
 #      src: /assets/img/abstract/num_dis.png
 #      alt: "Number of disasters"
     events:
+      - title: "Always Need More Data!"
+        #        year: "March 2011"
+        desc: "We added four new datasets to enhance our findings and to make the project more robust."
+        image: assets/img/intro/tape.png
+        alt: Tape
       - title: "NLP Models"
-#        year: "2009-2011"
+        #        year: "2009-2011"
         desc: "We used a combination of SotA NLP models that are trained on the [Twitter Disaster Dataset](https://www.kaggle.com/c/nlp-getting-started/data) to detect the disasters in the quotes."
         image: assets/img/intro/twitter.png
         alt: Twitter logo
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/intro/twitter.png
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/intro/twitter.png
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/intro/twitter.png
-        alt:
         # you can enforce the alignment
         align: right
     end: "How about <br> some more <br> details?"
@@ -80,10 +70,24 @@ en: &DEFAULT_EN
       text: "Additional datasets used during the project"
       datasets:
         - title: "Twitter Disaster Dataset"
-          link: https://www.kaggle.com/c/nlp-getting-started/data
+          link: https://www.kaggle.com/c/nlp-getting-started/data   # can be left empty
+          section: twitter-disaster-dataset
           desc: "The Twitter Disaster Dataset is a collection of tweets from Twitter users about 
           natural disasters. The dataset is available for download from the 
-          [Kaggle](https://www.kaggle.com/c/nlp-getting-started) website."
+          [Kaggle](https://www.kaggle.com/c/nlp-getting-started) website.
+          <br><br>
+          In this dataset we have a collection of tweets about natural disasters and random topics
+          from Twitter users. The tweets are labeled whether they are about a natural disaster or not.
+          We are asked to classify whether the tweets are about natural disasters or not using NLP
+          models. The structure of the dataset is as follows:
+          <br><br>
+          Columns<br>
+          &emsp;`id` - a unique identifier for each tweet<br>
+          &emsp;`text` - the text of the tweet<br>
+          &emsp;`location` - the location the tweet was sent from (may be blank)<br>
+          &emsp;`keyword` - a particular keyword from the tweet (may be blank)<br>
+          &emsp;`target` - in train.csv only, this denotes whether a tweet is about a real disaster (1) or not (0)<br>
+          "
 
   portfolio:
     title: "Visualizations"
