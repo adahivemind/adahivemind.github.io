@@ -284,6 +284,17 @@ en: &DEFAULT_EN
     section: portfolio
     closebutton: "Close Project"
 
+  conclusion:
+    title: "Conclusion"
+    text: "Some closing words on our project"
+    body: "All in all, we can see that NLP is an area of science where there is still room for 
+    improvement. Although, in the end, the simplest method worked the best detecting quotes, 
+    (i.e. keyword search,) the other models still have chances to change the world of computer 
+    science. Furthermore, from the data set we extracted, we can learn a wide range of valuable 
+    information about the world, including what factors make a disaster breakthrough news. As a 
+    result, this field is something that has a huge potential to reform science."
+    section: conclusion
+
   team:
     title: "Team"
     text: "The Amazing ADA HiveMind Team"
