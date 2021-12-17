@@ -50,25 +50,31 @@ en: &DEFAULT_EN
     events:
       - title: "Always Need More Data!"
         #        year: "March 2011"
-        desc: "We started with gathering data for our project, preprocessing and visualizing it. We gathered data from indicators of the severity of a disaster, from the development of different countries in different years, from domain geographics and of course, Twitter."
+        desc: "We started with gathering data for our project, preprocessing and visualizing it. We 
+        gathered data from indicators of the severity of a disaster, from the development of 
+        different countries in different years, from domain geographics and of course, Twitter."
         image: assets/img/intro/tape.png
         alt: Tape
       - title: "NLP Models"
         #        year: "2009-2011"
-        desc: "We used a combination of SotA NLP models that are trained on the [Twitter Disaster Dataset](https://www.kaggle.com/c/nlp-getting-started/data) to detect the disasters in the quotes."
+        desc: "We used a combination of SotA NLP models that are trained on the 
+        [Twitter Disaster Dataset](https://www.kaggle.com/c/nlp-getting-started/data) to detect the 
+        disasters in the quotes."
         image: assets/img/intro/twitter.png
         alt: Twitter logo
-      - title: "Filtering of quotes with regex"
+      - title: "Filtering Quotes with RegEx"
 #        year: "March 2011"
-        desc: "We also filtered earthquakes from QuoteBank using keyword regex. For the disasters we gathered the most important keyrods, such as the associated event name. "
-        image: assets/img/intro/twitter.png
+        desc: "We also filtered earthquakes from QuoteBank using keyword regex. For the disasters 
+        we gathered the most important keyrods, such as the associated event name."
+        image: assets/img/intro/filter.png
         alt:
-      - title: "Media coverage analysis"
-        desc: "We analysed in depth the possible factors of how much people talk about these horrible events."
-        image: assets/img/intro/twitter.png
+      - title: "Media Coverage Analysis"
+        desc: "We analysed in depth the possible factors of how much people talk about these 
+        horrible events."
+        image: assets/img/intro/media.png
         alt:
         # you can enforce the alignment
-        align: right
+#        align: right
     end: "How about <br> some more <br> details?"
 
   research:
@@ -116,7 +122,8 @@ en: &DEFAULT_EN
           link: https://databank.worldbank.org/source/world-development-indicators   # can be left empty
           section: wdi
           desc: "One important factor in how much people talk about a disaster might be the country 
-          and its attributes. In this dataset, the most important development indicators of the 
+          and its attributes. In this [dataset](https://databank.worldbank.org/source/world-development-indicators), 
+          the most important development indicators of the 
           country can be found, for example GDP, population, and fertility rate. Detailed 
           per-indicator source and description is given in `databank_wdi_metadata.csv`. We would 
           like to observe whether there is a connection between these indicators and the length 
@@ -134,7 +141,8 @@ en: &DEFAULT_EN
           they were found, we cannot find out the true geographical location of the news source 
           from the link itself. E.g. theguardian.com and nytimes.com both use .com top-level domain, 
           but they are reporting events in different countries. That's why we decided to choose a 
-          GDELT dataset that associates a particular domain with the right country from which that 
+          [GDELT dataset](https://blog.gdeltproject.org/mapping-the-media-a-geographic-lookup-of-gdelts-sources/) 
+          that associates a particular domain with the right country from which that 
           news source comes. This dataset was created from the enormous GDELT dataset and used the 
           fact that news outlets cover events physically proximate to them far more often than they 
           do events on the other side of the world."
