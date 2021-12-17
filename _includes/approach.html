@@ -12,6 +12,7 @@
         <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.body | markdownify }}</div>
       </div>
     </div>
+<!--    ADDITIONAL DATASETS-->
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <h2 class="section-subheading text-uppercase">{{ site.data.sitetext[site.locale].approach.additional-datasets.title | default: "Additional Datasets" }}</h2>
@@ -35,10 +36,10 @@
             <div class="large text-muted">{{ dataset.desc | markdownify }}</div>
           </div>
         </div>
-        {% if dataset.img.src %}
+        {% if dataset.image.src %}
         <div class="row">
           <div class="col-lg-8 mx-auto text-justify">
-            <img class="img-fluid" src="{{ dataset.img.src }}" alt="{{ dataset.img.alt }}">
+            <img class="img-fluid" src="{{ dataset.image.src }}" alt="{{ dataset.image.alt }}">
           </div>
         </div>
         {% endif %}
@@ -46,6 +47,29 @@
       {% endfor %}
     </div>
     {% endif %}
+<!--    MEDIA COVERAGE-->
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-subheading text-uppercase">{{ site.data.sitetext[site.locale].approach.media-coverage.title | default: "Media Coverage" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body1 | markdownify }}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body2 | markdownify }}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body3 | markdownify }}</div>
+      </div>
+    </div>
+<!--    END-->
   </div>
 </section>
 <!-- End About -->

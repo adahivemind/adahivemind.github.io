@@ -115,7 +115,7 @@ en: &DEFAULT_EN
           disaster's occurrence in terms of deaths and/or affected persons.
           <br><br>
           Below, we present the number of disasters per country on the world map."
-          img:
+          image:
             src: assets/img/approach/num_disasters_per_country.png
             alt: Number of disasters per country
         - title: "World Development Indicators"
@@ -130,7 +130,7 @@ en: &DEFAULT_EN
           and distribution of time they talk about the disaster. 
           <br><br>
           Below, we present the correlation of the development indicators as a heatmap."
-          img:
+          image:
             src: assets/img/approach/wdi.png
             alt: Correlation of World Development Indicators
         - title: "GDELT Geographic Lookup of Domains"
@@ -165,6 +165,51 @@ en: &DEFAULT_EN
           &emsp;`keyword` - a particular keyword from the tweet (may be blank)<br>
           &emsp;`target` - in train.csv only, this denotes whether a tweet is about a real disaster (1) or not (0)<br>
           "
+    media-coverage:
+      title: "Media Coverage Analysis"
+      text: "Analysis of the media coverage of natural disasters in the Quotebank dataset"
+      body1: "What makes an earthquake worth to talk about? 
+      <br><br>
+      All of the news portals are trying to find those events which reach the most readers. Natural 
+      disasters are a topic that interests many readers. Naturally, people don’t want to lag behind 
+      the world’s most important events, but that people are much more likely to read negative news 
+      than positive news, also contributes to that news portals are happy to bring down articles 
+      about these events. These tendencies are also true for celebrities, politicians and other 
+      media influencers whose thoughts and ideas are quoted in the media.
+      <br><br>
+      As for other news as well, the number of quotes in total and in the first period after the 
+      event is a meaningful indicator of its popularity in media. For the earthquakes we used this 
+      measurement to analyse the appearance of the disaster in the news. We also included the 
+      length between the first and last appearance of the earthquake in the quotes in the analysis, 
+      which happened to be less meaningful in this respect."
+      body2: "As we would expect, people tend to talk about more in the first few months after the 
+      earthquake about the disaster. As for any news an event is interesting if it happened in the 
+      recent past. For the earthquakes, one would expect that its appearance in the news is longer 
+      that casual news, because of the post-earthquakes and the long time of recovery of an area. 
+      In our analysis, we could also observe a peak of the daily quotes after one year of the date 
+      of the event, this can be the result of the anniversary commemorations."
+      body3: "However, our main focus was that what can influence the media coverage of the 
+      earthquakes. To analyse this question we gathered a lot of data about the disaster itself and 
+      its location and examined the correlation between these indicators and the media coverage 
+      indicators. What we would expect that those factors which measures the human exposure.
+      
+      <br><br>
+      As it can be seen in the heatmap, we observed a massive correlation between the number of quotes and
+      
+      - the number of death associated with the event
+      
+      - the number of injured
+      
+      - the reconstruction cost
+      
+      
+      As for the number of quotes in the first year the list expanded by 
+      
+      - aid contribution
+      
+      - mortality rate between under 5 years olds
+      
+      - number of days required to start a business"
 
   portfolio:
     title: "Visualizations"
