@@ -75,6 +75,15 @@ en: &DEFAULT_EN
     text: "A brief introduction to the project"
     body: "Here we can give a brief introduction to our methodologies and the data we used to create the project."
     section: approach
+    additional-datasets:
+      title: "Additional Datasets"
+      text: "Additional datasets used during the project"
+      datasets:
+        - title: "Twitter Disaster Dataset"
+          link: https://www.kaggle.com/c/nlp-getting-started/data
+          desc: "The Twitter Disaster Dataset is a collection of tweets from Twitter users about 
+          natural disasters. The dataset is available for download from the 
+          [Kaggle](https://www.kaggle.com/c/nlp-getting-started) website."
 
   portfolio:
     title: "Visualizations"
