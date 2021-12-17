@@ -19,12 +19,11 @@ en: &DEFAULT_EN
   about:
     title: "Abstract"
     text: "A brief introduction to the project"
-    body: "Every year, natural disasters happen and often take many lives. After such events, 
-    the pages of newspapers are full of quotes from people expressing regret for the unfortunate 
-    event. These events often remain in people's memory for a lifetime. What influences how long 
-    these events will be talked about years later? In this research project, our goal is to explore 
-    how much is said about the biggest disasters (such as earthquakes, storms, floods) years after 
-    they have occurred and what factors influence this. We will look for answers in the 
+    body: "Every year, natural disasters happen and often take many lives. After such events, the 
+    pages of newspapers are full of quotes from people expressing regret for the unfortunate event. 
+    These events often remain in people's memory for a lifetime. What influences how long these 
+    events will be talked about? In this research project, we explore how much is said about the 
+    biggest earthquakes after they have occured and what factors influence this. We will look for answers in the 
     [Quotebank](https://github.com/epfl-dlab/Quotebank) 2008-2020 quotes on disasters taken from the
      [international disasters database](https://public.emdat.be/data) combined with world 
      development indicators from the [World Data Bank](https://databank.worldbank.org/source/world-development-indicators). 
@@ -149,10 +148,10 @@ en: &DEFAULT_EN
           natural disasters. The dataset is available for download from the 
           [Kaggle](https://www.kaggle.com/c/nlp-getting-started) website.
           <br><br>
-          In this dataset we have a collection of tweets about natural disasters and random topics
-          from Twitter users. The tweets are labeled whether they are about a natural disaster or not.
-          We are asked to classify whether the tweets are about natural disasters or not using NLP
-          models. The structure of the dataset is as follows:
+          In this dataset we have a collection of tweets about disasters and random topics from 
+          Twitter users. The tweets are labeled whether they are about a disaster or not and we 
+          use them to train NLP models for transfer learning. The structure of the dataset is as 
+          follows:
           <br><br>
           Columns<br>
           &emsp;`id` - a unique identifier for each tweet<br>
@@ -261,7 +260,7 @@ en: &DEFAULT_EN
       indicators. What we would expect that those factors which measures the human exposure.
       
       <br><br>
-      As it can be seen in the heatmap, we observed a massive correlation between the number of quotes and
+      As it can be seen in the heatmap below, we observed a massive correlation between the number of quotes and
       
       - the number of death associated with the event
       
@@ -277,6 +276,9 @@ en: &DEFAULT_EN
       - mortality rate between under 5 years olds
       
       - number of days required to start a business"
+      image1:
+        src: assets/img/approach/heatmap.png
+        alt: Heatmap
 
   portfolio:
     title: "Visualizations"

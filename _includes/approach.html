@@ -409,6 +409,14 @@
             </div>
         </div>
     </div>
+    {% if site.data.sitetext[site.locale].approach.media-coverage.image1 %}
+    <div class="row m-plot">
+        <div class="col-lg-8 text-justify">
+            <img class="img-fluid" src="{{ site.data.sitetext[site.locale].approach.media-coverage.image1.src }}"
+                 alt="{{ site.data.sitetext[site.locale].approach.media-coverage.image1.alt }}">
+        </div>
+    </div>
+    {% endif %}
     <!--    END-->
 </div>
 </section>
