@@ -38,17 +38,19 @@ en: &DEFAULT_EN
     section: intro
     # left is the default
     #start_align: "left"
-    body1: "Every year, natural disasters happen and often take many lives. After such events, 
-        the pages of newspapers are full of quotes from people expressing regret for the unfortunate 
-        event. These events often remain in people's memory for a lifetime. What influences how long 
-        these events"
+    body1: "We proposed to explore two questions in this research project. 
+    First, how correctly will NLP models trained on disaster tweets like in this kaggle challenge generalize to classifying disaster quotes in Quotebank? 
+    This question is important in respect of robustness of models and raise the problem of training new models for different type of texts.
+    Second, what factors influence how long a earthquake will be talked about in Quotebank quotes from 2008 to 2020? 
+    The interesting factors can include total deaths, total damage in dollars, country of disaster, wealth indicators of the country, etc. 
+    So, we analyse this question from the point of the disaster specific traits of the event, and from the location of the event."
 #    image1:
 #      src: /assets/img/abstract/num_dis.png
 #      alt: "Number of disasters"
     events:
       - title: "Always Need More Data!"
         #        year: "March 2011"
-        desc: "We added four new datasets to enhance our findings and to make the project more robust."
+        desc: "We started with gathering data for our project, preprocessing and visualizing it. We gathered data from indicators of the severity of a disaster, from the development of different countries in different years, from domain geographics and of course, Twitter."
         image: assets/img/intro/tape.png
         alt: Tape
       - title: "NLP Models"
@@ -56,6 +58,15 @@ en: &DEFAULT_EN
         desc: "We used a combination of SotA NLP models that are trained on the [Twitter Disaster Dataset](https://www.kaggle.com/c/nlp-getting-started/data) to detect the disasters in the quotes."
         image: assets/img/intro/twitter.png
         alt: Twitter logo
+      - title: "Filtering of quotes with regex"
+#        year: "March 2011"
+        desc: "We also filtered earthquakes from QuoteBank using keyword regex. For the disasters we gathered the most important keyrods, such as the associated event name. "
+        image: assets/img/intro/twitter.png
+        alt:
+      - title: "Media coverage analysis"
+        desc: "We analysed in depth the possible factors of how much people talk about these horrible events."
+        image: assets/img/intro/twitter.png
+        alt:
         # you can enforce the alignment
         align: right
     end: "How about <br> some more <br> details?"
