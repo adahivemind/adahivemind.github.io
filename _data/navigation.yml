@@ -13,10 +13,10 @@ en: &DEFAULT_EN
   nav:
     - title: "Abstract"
       section: abstract
-    - title: "Intro"
-      section: intro
     - title: "Questions"
       section: research
+    - title: "Timeline"
+      section: intro
     - title: "Approach"
       section: approach
     - title: "Team"
