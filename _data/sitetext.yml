@@ -247,7 +247,11 @@ en: &DEFAULT_EN
       event is a meaningful indicator of its popularity in media. For the earthquakes we used this 
       measurement to analyse the appearance of the disaster in the news. We also included the 
       length between the first and last appearance of the earthquake in the quotes in the analysis, 
-      which happened to be less meaningful in this respect."
+      which happened to be less meaningful in this respect.
+      <br><br>
+      Due to Plotly's auto-slideshow feature, the plots are not automatically rescaled. You can use 
+      `Autoscale` and `Reset Axis` buttons on the right top corner of the plot to better visualize 
+      the quote distributions of a particular disaster in the plot below."
       body2: "As we would expect, people tend to talk about more in the first few months after the 
       earthquake about the disaster. As for any news an event is interesting if it happened in the 
       recent past. For the earthquakes, one would expect that its appearance in the news is longer 
@@ -289,7 +293,12 @@ en: &DEFAULT_EN
   conclusion:
     title: "Conclusion"
     text: "Some closing words on our project"
-    body: "All in all, we can see that NLP is an area of science where there is still room for improvement. The simplest regex search method has, in the end, worked the best for detecting the quotes in our use case. Furthermore, from the data set we extracted, we can learn a wide range of valuable information about the world, including what factors make a disaster breakthrough news. As a result, this field is something that has a huge potential to reform science."
+    body: "All in all, we can see that NLP is an area of science where there is still room for 
+    improvement. The simplest regex search method has, in the end, worked the best for 
+    detecting the quotes in our use case. Furthermore, from the data set we extracted, we can 
+    learn a wide range of valuable information about the world, including what factors make a 
+    disaster breakthrough news. As a result, this field is something that has a huge potential 
+    to reform science."
     section: conclusion
 
   team:
