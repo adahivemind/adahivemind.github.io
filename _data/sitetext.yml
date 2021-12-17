@@ -289,7 +289,7 @@ en: &DEFAULT_EN
   conclusion:
     title: "Conclusion"
     text: "Some closing words on our project"
-    body: "All in all, we can see that NLP is an area of ​​science where there is still room for improvement. The simplest regex search method has, in the end, worked the best for detecting the quotes in our use case. Furthermore, from the data set we extracted, we can learn a wide range of valuable information about the world, including what factors make a disaster breakthrough news. As a result, this field is something that has a huge potential to reform science."
+    body: "All in all, we can see that NLP is an area of science where there is still room for improvement. The simplest regex search method has, in the end, worked the best for detecting the quotes in our use case. Furthermore, from the data set we extracted, we can learn a wide range of valuable information about the world, including what factors make a disaster breakthrough news. As a result, this field is something that has a huge potential to reform science."
     section: conclusion
 
   team:
