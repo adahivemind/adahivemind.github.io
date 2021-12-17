@@ -42,33 +42,39 @@ en: &DEFAULT_EN
         the pages of newspapers are full of quotes from people expressing regret for the unfortunate 
         event. These events often remain in people's memory for a lifetime. What influences how long 
         these events"
-    image1:
-      src: /assets/img/abstract/num_dis.png
-      alt: "Number of disasters"
+#    image1:
+#      src: /assets/img/abstract/num_dis.png
+#      alt: "Number of disasters"
     events:
       - title: "NLP Models"
 #        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
+        desc: "We used a combination of SotA NLP models that are trained on the [Twitter Disaster Dataset](https://www.kaggle.com/c/nlp-getting-started/data) to detect the disasters in the quotes."
+        image: assets/img/intro/twitter.png
+        alt: Twitter logo
       - title: "An Agency is Born"
         year: "March 2011"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
+        image: assets/img/intro/twitter.png
         alt:
       - title: "Jekyll Theme is created"
         year: "2019"
         desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
+        image: assets/img/intro/twitter.png
         alt: image alt text
       - title: "Title"
         year: "2009-2011"
         desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
+        image: assets/img/intro/twitter.png
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+    end: "How about <br> some more <br> details?"
+
+  approach:
+    title: "Approach"
+    text: "A brief introduction to the project"
+    body: "Here we can give a brief introduction to our methodologies and the data we used to create the project."
+    section: approach
 
   portfolio:
     title: "Visualizations"
