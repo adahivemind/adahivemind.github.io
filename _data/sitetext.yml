@@ -196,9 +196,11 @@ en: &DEFAULT_EN
       `BERT` and `DISTILBERT` as their code names. We have modified them, performed a small 
       hyperparameter search to find the best parameters, and trained the final model on all 
       available data (`train`+`test`). Their respective test performance on the tweets dataset is 
-      shown below:
-      <br><br>
-      Given the big number of quotes in Quotebank (`234'994'989`), the computational time needed to 
+      shown below:"
+      image2:
+        src: assets/img/approach/cf_bert_distilbert.png
+        alt: "Bert and DistilBert Confusion Matrix"
+      body4: "Given the big number of quotes in Quotebank (`234'994'989`), the computational time needed to 
       predict the class for all Quotebank quotes was about 80 GPU days. Because of this, we applied 
       the final models on a randomly chosen sample consisting of 0.1% of the whole dataset, which 
       is still an enormous sample of 234'991 quotes and gives tight bounds for the resulting 
@@ -211,12 +213,32 @@ en: &DEFAULT_EN
       positives or false positives. In the hand labeling, we distinguished general disasters the 
       models were trained on from natural disasters we are interested in. The resulting precisions 
       are, however, quite low and are shown in the table below:"
-      body4: "DISTILBERT had a far better generalization performance, as evaluated by precision, 
+      body5: "DISTILBERT had a far better generalization performance, as evaluated by precision, 
       for both general disasters and natural disasters. The transfer learning didn't succeed 
       overall and the models were not robust to the change of text distribution from tweets to 
       Quotebank quotes. This could have been expected given the significant differences in the 
       texts that tweets have compared to quotes: tweets are much shorter, use loads of hashtags, 
       URLs, and emojis, etc."
+      body6: "But going beneath just the numbers, we experienced many strange things when labeling 
+      the quotes. Firstly, BERT worked almost the opposite way from what we wanted it to, as if it 
+      deliberately decided to choose those quotes which have no connection to any disasters. They 
+      were about Formula-1, politics, and celebrity news. However, DISTILBERT was more promising. 
+      Even though it had many false positives, they would often be quotes about sports, but in the 
+      context of sports matches being wars, and people fighting for triumph. For example: “Our 
+      defense did a great job. There were some times where they could have been better, but I saw 
+      the puck well.” Also, it can be interesting that a lot of quotes were about veterans and their 
+      rehabilitation. Fires, health problems, cybercrime, and financial crises were also a frequent 
+      part of the false positives. The overall sentiment was also negative in these predictions, 
+      which is also something that is expected when predicting the topic of catastrophic events. 
+      All in all, none of the models performed well, but DISTILBERT had shown some robustness 
+      qualitatively.
+      <br><br>
+      Below are snippets of positives for BERT and DISTILBERT."
+      body7: "For the details of the transfer learning effort, you can head over to the relevant 
+      notebooks: [tweets-bert](https://github.com/epfl-ada/ada-2021-project-hivemind/blob/main/tweets/tweets-bert.ipynb), 
+      [tweets-transfer-bert](https://github.com/epfl-ada/ada-2021-project-hivemind/blob/main/tweets/tweets-transfer-bert.ipynb), 
+      [tweets-transfer-distilbert](https://github.com/epfl-ada/ada-2021-project-hivemind/blob/main/tweets/tweets-transfer-distilbert.ipynb), 
+      [quotebank-sample](https://github.com/epfl-ada/ada-2021-project-hivemind/blob/main/tweets/quotebank-sample.ipynb)."
     media-coverage:
       title: "Media Coverage Analysis"
       text: "Analysis of the media coverage of natural disasters in the Quotebank dataset"

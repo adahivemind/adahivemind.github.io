@@ -48,7 +48,7 @@
             </div>
             {% if dataset.image.src %}
             <div class="row m-plot">
-                <div class="col-lg-8 mx-auto text-justify">
+                <div class="col-lg-12 mx-auto text-justify">
                     <img class="img-fluid" src="{{ dataset.image.src }}"
                          alt="{{ dataset.image.alt }}">
                 </div>
@@ -188,6 +188,22 @@
             </div>
         </div>
     </div>
+    {% if site.data.sitetext[site.locale].approach.nlp-tweets.image2 %}
+    <div class="row m-graph">
+        <div class="col-lg-10 mx-auto text-justify">
+            <img class="img-fluid"
+                 src="{{ site.data.sitetext[site.locale].approach.nlp-tweets.image2.src }}"
+                 alt="{{ site.data.sitetext[site.locale].approach.nlp-tweets.image2.alt }}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body4 | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
     <div class="row m-graph">
         <div class="col-lg-6 mx-auto text-justify">
             <table class="table table-bordered table-hover table-condensed">
@@ -216,7 +232,190 @@
     <div class="row">
         <div class="col-lg-8 mx-auto text-justify">
             <div class="large text-muted">{{
-                site.data.sitetext[site.locale].approach.nlp-tweets.body4 | markdownify }}
+                site.data.sitetext[site.locale].approach.nlp-tweets.body5 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body6 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <div class="row m-graph">
+        <div class="col-lg-12 mx-auto text-justify">
+            <h2 class="section-subheading text-center">BERT</h2>
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                <tr class="text-muted">
+                    <th title="Field #1">general-disaster</th>
+                    <th title="Field #2">natural-disaster</th>
+                    <th title="Field #3">quote-text</th>
+                    <th title="Field #4">speaker</th>
+                    <th title="Field #5">FIELD5</th>
+                    <th title="Field #6">FIELD6</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>disaster</td>
+                    <td>1</td>
+                    <td>We cannot ignore the issues of migration and need to bring them out from the
+                        shadows of the climate change and disaster risk reduction debate
+                    </td>
+                    <td></td>
+                    <td>Henry Puna</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>And they can and we do not know who can win it</td>
+                    <td> we have not got a clue and it looks like being 50-50.</td>
+                    <td>None</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>i was</td>
+                    <td> like</td>
+                    <td> a super nerdy kid... fully invested in creating narrative from a very young
+                        age. writing stories for my little sister and me to act out. like a full-on
+                        nerd.
+                    </td>
+                    <td>paul dano</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>It would be great if we won Friday</td>
+                    <td> but it won&#39;t end our season.</td>
+                    <td>Eric Hayes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>I want to ask the minister whether or not you have said a single word in
+                        your speech about the poor man of Pakistan. Certainly not. The PML-N is a
+                        party of mill owners
+                    </td>
+                    <td> businessmen and...</td>
+                    <td></td>
+                    <td>Aitzaz Ahsan</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row m-graph">
+        <div class="col-lg-12 mx-auto text-justify">
+            <h2 class="section-subheading text-center">DISTILBERT</h2>
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                <tr class="text-muted">
+                    <th title="Field #1">general-disaster</th>
+                    <th title="Field #2">natural-disaster</th>
+                    <th title="Field #3">quote-text</th>
+                    <th title="Field #4">speaker</th>
+                    <th title="Field #5">FIELD5</th>
+                    <th title="Field #6">FIELD6</th>
+                    <th title="Field #7">FIELD7</th>
+                    <th title="Field #8">FIELD8</th>
+                    <th title="Field #9">FIELD9</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>war</td>
+                    <td>0</td>
+                    <td>You don&#39;t want to go into the war if you don&#39;t have to. But I had to
+                        go. I enjoyed it after I&#39;d went and come back
+                    </td>
+                    <td> but I didn&#39;t enjoy it when was over there. I had to do things I didn&#39;t
+                        want to do.
+                    </td>
+                    <td>Richard Overton</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>i don&#39;t know that there was one specific incident that did it. he&#39;s
+                        been having some clicking feeling
+                    </td>
+                    <td> sound in his hip</td>
+                    <td> and it&#39;s been bothering him a little while</td>
+                    <td></td>
+                    <td>roy williams</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>the heyday of that great symbolic form of parisian revolution that is the
+                        barricade
+                    </td>
+                    <td>eric hazan</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>storm</td>
+                    <td>1</td>
+                    <td>we&#39;re back afte the storm and we&#39;re looking forward to the future.
+                    </td>
+                    <td>Craig Cates</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>There is that sense of putting one foot out there</td>
+                    <td> and anything can happen. I&#39;m doing a performance tonight</td>
+                    <td> here in Los Angeles</td>
+                    <td> of a show John Malkovich and I devised called A Celebration Of Harold
+                        Pinter. Hundreds of people turn up and sometimes
+                    </td>
+                    <td> it can be like being on the Mittellegi Ridge on the Eiger</td>
+                    <td> where I found myself 14 months ago.</td>
+                    <td>Julian Sands</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>That&#39;s part of the reason the Air Force is looking at these other
+                        authorities to bring people back in because we&#39;ve been hemorrhaging
+                        pilots
+                    </td>
+                    <td></td>
+                    <td>Mac Thornberry</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body7 | markdownify }}
             </div>
         </div>
     </div>
