@@ -1,80 +1,262 @@
 <!-- About -->
-<section class="page-section bg-light" id="{{ site.data.sitetext[site.locale].approach.section | default: "approach" }}">
+<section class="page-section bg-light"
+         id="{{ site.data.sitetext[site.locale].approach.section | default: " approach" }}">
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].approach.title | default: "Approach" }}</h2>
-      <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].approach.text | default: "" }}</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-justify">
-      <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.body | markdownify }}</div>
-    </div>
-  </div>
-  <!--    ADDITIONAL DATASETS-->
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-center">
-      <h2 class="section-subheading text-uppercase">{{ site.data.sitetext[site.locale].approach.additional-datasets.title | default: "Additional Datasets" }}</h2>
-      <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].approach.additional-datasets.text | default: "" }}</h3>
-    </div>
-  </div>
-  {% if site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
-  <div class="container">
-    <ol class="col-lg-8 mx-auto text-left large text-muted" type="1">
-      {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
-      <li><a href="#{{ dataset.section }}">{{ dataset.title }}</a></li>
-      {% endfor %}
-    </ol>
-    {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
-    <div class="row" id="{{ dataset.section }}">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-subheading">{{ dataset.title | default: "Dataset" }}</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-justify">
-          <div class="large text-muted">{{ dataset.desc | markdownify }}</div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{
+                site.data.sitetext[site.locale].approach.title | default: "Approach" }}</h2>
+            <h3 class="section-subheading text-muted">{{
+                site.data.sitetext[site.locale].approach.text | default: "" }}</h3>
         </div>
-      </div>
-      {% if dataset.image.src %}
-      <div class="row m-plot">
+    </div>
+    <div class="row">
         <div class="col-lg-8 mx-auto text-justify">
-          <img class="img-fluid" src="{{ dataset.image.src }}" alt="{{ dataset.image.alt }}">
+            <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.body |
+                markdownify }}
+            </div>
         </div>
-      </div>
-      {% endif %}
     </div>
-    {% endfor %}
-  </div>
-  {% endif %}
-  <!--    MEDIA COVERAGE-->
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-center">
-      <h2 class="section-subheading text-uppercase">{{ site.data.sitetext[site.locale].approach.media-coverage.title | default: "Media Coverage" }}</h2>
-      <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.text | default: "" }}</h3>
+    <!--    ADDITIONAL DATASETS-->
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-subheading text-uppercase">{{
+                site.data.sitetext[site.locale].approach.additional-datasets.title | default:
+                "Additional Datasets" }}</h2>
+            <h3 class="section-subheading text-muted">{{
+                site.data.sitetext[site.locale].approach.additional-datasets.text | default: ""
+                }}</h3>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-justify">
-      <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body1 | markdownify }}</div>
+    {% if site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
+    <div class="container">
+        <ol class="col-lg-8 mx-auto text-left large text-muted" type="1">
+            {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets
+            %}
+            <li><a href="#{{ dataset.section }}">{{ dataset.title }}</a></li>
+            {% endfor %}
+        </ol>
+        {% for dataset in site.data.sitetext[site.locale].approach.additional-datasets.datasets %}
+        <div class="row" id="{{ dataset.section }}">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-subheading">{{ dataset.title | default: "Dataset" }}</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-justify">
+                    <div class="large text-muted">{{ dataset.desc | markdownify }}</div>
+                </div>
+            </div>
+            {% if dataset.image.src %}
+            <div class="row m-plot">
+                <div class="col-lg-8 mx-auto text-justify">
+                    <img class="img-fluid" src="{{ dataset.image.src }}"
+                         alt="{{ dataset.image.alt }}">
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
-  </div>
-  <div class="row m-graph">
-    <div class="col-lg-12 mx-auto text-justify">
-      {% include earthquakes.html %}
+    {% endif %}
+    <!--  NLP TWEETS-->
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-subheading text-uppercase">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.title | default: "Media
+                Coverage" }}</h2>
+            <h3 class="section-subheading text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.text | default: "" }}</h3>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-justify">
-      <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body2 | markdownify }}</div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body1 | markdownify }}
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-justify">
-      <div class="large text-muted">{{ site.data.sitetext[site.locale].approach.media-coverage.body3 | markdownify }}</div>
+    <div class="row m-graph">
+        <div class="col-lg-12 mx-auto text-justify">
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                <tr>
+                    <th title="Field #1">id</th>
+                    <th title="Field #2">keyword</th>
+                    <th title="Field #3">location</th>
+                    <th title="Field #4">text</th>
+                    <th title="Field #5">target</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="right">5636</td>
+                    <td>flooding</td>
+                    <td>United States</td>
+                    <td>#BREAKING Business at the Sponge Docks washed out by rain flooding /#news
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td align="right">46</td>
+                    <td>ablaze</td>
+                    <td>London</td>
+                    <td>Birmingham Wholesale Market is ablaze BBC News - Fire breaks out at
+                        Birmingham&#39;s Wholesale Market http://t.co/irWqCEZWEU
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td align="right">140</td>
+                    <td>accident</td>
+                    <td></td>
+                    <td>@Calum5SOS this happened on accident but I like it http://t.co/QHmXuljSX9
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td align="right">230</td>
+                    <td>airplane accident</td>
+                    <td>#BlackLivesMatter</td>
+                    <td>@thugIauren I had myself on airplane mode by accident ??</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td align="right">473</td>
+                    <td>armageddon</td>
+                    <td></td>
+                    <td>#Turkey invades #Israel - Halfway to #Armageddon http://t.co/xUOh3sJNXF</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td align="right">497</td>
+                    <td>army</td>
+                    <td>Campinas Sp</td>
+                    <td>You da One #MTVSummerStar #VideoVeranoMTV #MTVHottest Britney Spears Lana
+                        Del Rey
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td align="right">6291</td>
+                    <td>hostage</td>
+                    <td>Seattle, WA</td>
+                    <td>Sinai branch of Islamic State threatens to execute Croatian hostage in 48
+                        hours http://t.co/YvtcXrPt34
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td align="right">701</td>
+                    <td>attacked</td>
+                    <td></td>
+                    <td>Aus need career best of @davidwarner31 along with Steve smith to even try
+                        competing.. SURA virus has attacked team Australia brutally
+                    </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td align="right">2798</td>
+                    <td>curfew</td>
+                    <td></td>
+                    <td>! Sex-themed e-books given curfew in Germany on http://t.co/7NLEnCph8X</td>
+                    <td>0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
-  <!--    END-->
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body2 | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% if site.data.sitetext[site.locale].approach.nlp-tweets.image1 %}
+    <div class="row m-plot">
+        <div class="col-lg-8 mx-auto text-justify">
+            <img class="img-fluid"
+                 src="{{ site.data.sitetext[site.locale].approach.nlp-tweets.image1.src }}"
+                 alt="{{ site.data.sitetext[site.locale].approach.nlp-tweets.image1.alt }}">
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body3 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <div class="row m-graph">
+        <div class="col-lg-6 mx-auto text-justify">
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                <tr>
+                    <th title="Field #1" class="text-center">Model</th>
+                    <th title="Field #2" class="text-center">General Disaster Precision</th>
+                    <th title="Field #3" class="text-center">Natural Disaster Precision</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>BERT</td>
+                    <td class="text-right">5.50%</td>
+                    <td class="text-right">1.00%</td>
+                </tr>
+                <tr>
+                    <td>DISTILBERT</td>
+                    <td class="text-right">36.50%</td>
+                    <td class="text-right">4.50%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.nlp-tweets.body4 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <!--    MEDIA COVERAGE-->
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-subheading text-uppercase">{{
+                site.data.sitetext[site.locale].approach.media-coverage.title | default: "Media
+                Coverage" }}</h2>
+            <h3 class="section-subheading text-muted">{{
+                site.data.sitetext[site.locale].approach.media-coverage.text | default: "" }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.media-coverage.body1 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <div class="row m-graph">
+        <div class="col-lg-12 mx-auto text-justify">
+            {% include earthquakes.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.media-coverage.body2 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+            <div class="large text-muted">{{
+                site.data.sitetext[site.locale].approach.media-coverage.body3 | markdownify }}
+            </div>
+        </div>
+    </div>
+    <!--    END-->
 </div>
 </section>
 <!-- End About -->
