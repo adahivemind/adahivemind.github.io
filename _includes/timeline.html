@@ -12,6 +12,7 @@
           <div class="large text-muted">{{ site.data.sitetext[site.locale].timeline.body1 | markdownify }}</div>
         </div>
       </div>
+      {% if site.data.sitetext[site.locale].timeline.image1 %}
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <img class="img-fluid"
@@ -19,6 +20,7 @@
                alt="{{ site.data.sitetext[site.locale].timeline.image1.alt | default: ""}}">
         </div>
       </div>
+      {% endif %}
       <div class="row pt-lg-5 pt-md-3 pt-sm-1">
         <div class="col-lg-12">
           <ul class="timeline">
