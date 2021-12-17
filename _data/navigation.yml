@@ -13,14 +13,14 @@ en: &DEFAULT_EN
   nav:
     - title: "Abstract"
       section: abstract
-    - title: "Portfolio"
-      section: portfolio
-    - title: "Timeline"
-      section: timeline
+    - title: "Introduction"
+      section: intro
+    - title: "Approach"
+      section: approach
+    - title: "Visualizations"
+      section: visualizations
     - title: "Team"
       section: team
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:

@@ -1,13 +1,25 @@
-<!-- About -->
+<!-- Timeline -->
   <section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].timeline.title | markdownify | default: "About" }}</h2>
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].timeline.title | markdownify | default: "Timeline" }}</h2>
           <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].timeline.text | default: "timeline"}}</h3>
         </div>
       </div>
       <div class="row">
+        <div class="col-lg-8 mx-auto text-justify">
+          <div class="large text-muted">{{ site.data.sitetext[site.locale].timeline.body1 | markdownify }}</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <img class="img-fluid"
+               src="{{ site.data.sitetext[site.locale].timeline.image1.src }}"
+               alt="{{ site.data.sitetext[site.locale].timeline.image1.alt | default: ""}}">
+        </div>
+      </div>
+      <div class="row pt-lg-5 pt-md-3 pt-sm-1">
         <div class="col-lg-12">
           <ul class="timeline">
       {%- assign align = site.data.sitetext[site.locale].timeline.start_align -%}

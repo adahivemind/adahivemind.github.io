@@ -16,36 +16,38 @@ en: &DEFAULT_EN
     button: Let's Explore!
     buttonlink: "#abstract"
 
-#  services:
-#    title: "Services"
-#    text: "Lorem ipsum"
-#    section: services
-#    list:
-#      - title: "E-Commerce"
-#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-#        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-#      - title: "Responsive Design"
-#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-#        icon: fas fa-laptop
-#      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-#        desc: "Your description here, full **Markdown** support"
-#        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
+  about:
+    title: "Abstract"
+    text: "A brief introduction to the project"
+    body: "Every year, natural disasters happen and often take many lives. After such events, 
+    the pages of newspapers are full of quotes from people expressing regret for the unfortunate 
+    event. These events often remain in people's memory for a lifetime. What influences how long 
+    these events will be talked about years later? In this research project, our goal is to explore 
+    how much is said about the biggest disasters (such as earthquakes, storms, floods) years after 
+    they have occurred and what factors influence this. We will look for answers in the 
+    [Quotebank](https://github.com/epfl-dlab/Quotebank) 2008-2020 quotes on disasters taken from the
+     [international disasters database](https://public.emdat.be/data) combined with world 
+     development indicators from the [World Data Bank](https://databank.worldbank.org/source/world-development-indicators). 
+     To simplify disaster quote detection, we will further look into classifying the quotes by 
+     whether they talk about a disaster or not."
+    section: abstract
 
   timeline:
-    title: "Timeline"
+    title: "Introduction"
     text: "Lorem ipsum timeline"
     section: timeline
     # left is the default
     #start_align: "left"
+    body1: "Every year, natural disasters happen and often take many lives. After such events, 
+        the pages of newspapers are full of quotes from people expressing regret for the unfortunate 
+        event. These events often remain in people's memory for a lifetime. What influences how long 
+        these events"
+    image1:
+      src: /assets/img/abstract/num_dis.png
+      alt: "Number of disasters"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
+      - title: "NLP Models"
+#        year: "2009-2011"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/1.jpg
         alt:
@@ -68,29 +70,11 @@ en: &DEFAULT_EN
         align: right
     end: "Be Part <br> of Our <br> Story!"
 
-  about:
-    title: "Abstract"
-    text: "A brief introduction to the project"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: abstract
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+  portfolio:
+    title: "Visualizations"
+    text: "Some visualizations of the data"
+    section: portfolio
+    closebutton: "Close Project"
 
   team:
     title: "OUR AMAZING TEAM"
@@ -129,20 +113,53 @@ en: &DEFAULT_EN
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
 
-  contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
-    section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
-    phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
-    submit: "Send Message"
+  #  services:
+  #    title: "Services"
+  #    text: "Lorem ipsum"
+  #    section: services
+  #    list:
+  #      - title: "E-Commerce"
+  #        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+  #        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+  #      - title: "Responsive Design"
+  #        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+  #        icon: fas fa-laptop
+  #      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+  #        desc: "Your description here, full **Markdown** support"
+  #        icon: fab fa-markdown
+
+  #  clients:
+  #    section: clients
+  #    max-height: 100px
+  #    horizontal-scrolling: "" #"yes/no"
+  #    list:
+  #      - title: "envato"
+  #        url: https://github.com/raviriley/agency-jekyll-theme
+  #        logo: assets/img/clients/envato.jpg
+  #      - title: "designmodo"
+  #        url: https://github.com/raviriley/agency-jekyll-theme
+  #        logo: assets/img/clients/designmodo.jpg
+  #      - title: "themeforest"
+  #        url: https://github.com/raviriley/agency-jekyll-theme
+  #        logo: assets/img/clients/themeforest.jpg
+  #      - title: "Creative Market"
+  #        url: https://github.com/raviriley/agency-jekyll-theme
+  #        logo: assets/img/clients/creative-market.jpg
+
+  #  contact:
+  #    title: "Contact Us"
+  #    text: "Lorem ipsum or call 123456789"
+  #    section: contact
+  #    name: "Name*"
+  #    name-validation: "Please enter your name."
+  #    email: "Email*"
+  #    email-validation: "Please enter your email address."
+  #    phone: "Phone Number"
+  #    phone-validation: "Please enter your phone number."
+  #    message: "Message*"
+  #    message-validation: "Please enter a message."
+  #    subject: "Contact Form Submission"
+  #    submit: "Send Message"
 
   footer:
     legal: "Privacy Policy"
