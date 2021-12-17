@@ -23,7 +23,7 @@ en: &DEFAULT_EN
     pages of newspapers are full of quotes from people expressing regret for the unfortunate event. 
     These events often remain in people's memory for a lifetime. What influences how long these 
     events will be talked about? In this research project, we explore how much is said about the 
-    biggest earthquakes after they have occured and what factors influence this. We will look for answers in the 
+    biggest earthquakes after they have occurred and what factors influence this. We will look for answers in the 
     [Quotebank](https://github.com/epfl-dlab/Quotebank) 2008-2020 quotes on disasters taken from the
      [international disasters database](https://public.emdat.be/data) combined with world 
      development indicators from the [World Data Bank](https://databank.worldbank.org/source/world-development-indicators). 
@@ -37,15 +37,15 @@ en: &DEFAULT_EN
     body: "In this research project, we explore two questions.
     <br><br>
     First, how correctly will NLP models trained on disaster tweets like in 
-    [this kaggle challenge](https://www.kaggle.com/c/nlp-getting-started/overview) generalize to 
+    [this Kaggle challenge](https://www.kaggle.com/c/nlp-getting-started/overview) generalize to 
     classifying disaster quotes in Quotebank? This question is important in respect of robustness 
     analysis of models and their transfer learning capabilities.
     <br><br>
-    Second, what factors influence how long a earthquake will be talked about in Quotebank quotes 
+    Second, what factors influence how long an earthquake will be talked about in Quotebank quotes 
     from 2008 to 2020? The interesting factors include total deaths, total damage in dollars, 
     country of disaster, wealth indicators of the country, etc.
     <br><br>
-    There are various other research question related to this that are interesting and worth 
+    There are various other research questions related to this that are interesting and worth 
     further research, like \"what is the sentiment towards different disasters and why\" and \"how 
     does the country of the speaker affect which disasters he is talking about\"."
     # Given that a comprehensive analysis of these research questions was challenging, we
@@ -60,7 +60,7 @@ en: &DEFAULT_EN
     #start_align: "left"
     body1: "First, how accurate is the NLP model trained in disaster tweets generalized to the 
     classification of disaster estimates in Quotebank? Second, what are the factors that influence 
-    the duration of the earthquake  in the Quotebank quote from 2008 to 2020?
+    the duration of the earthquake in the Quotebank quote from 2008 to 2020?
     <br><br>
     To answer these questions, we will use a timeline to visualize the steps taken in this section."
     events:
@@ -81,11 +81,11 @@ en: &DEFAULT_EN
       - title: "Filtering Quotes with RegEx"
 #        year: "March 2011"
         desc: "We also filtered earthquakes from QuoteBank using keyword regex. For the disasters 
-        we gathered the most important keyrods, such as the associated event name."
+        we gathered the most important keywords, such as the associated event name."
         image: assets/img/intro/filter.png
         alt: Filter
       - title: "Media Coverage Analysis"
-        desc: "We analysed in depth the possible factors of how much people talk about these 
+        desc: "We analyzed in depth the possible factors of how much people talk about these 
         horrible events."
         image: assets/img/intro/media.png
         alt: Media
@@ -165,8 +165,8 @@ en: &DEFAULT_EN
       body1: "To simplify the classification of quotes by whether they talk about disasters or not, 
       we looked into transferring a model trained to classify whether a Tweet is talking about a 
       disaster and using it to classify Quotebank quotes. To do so, we have started with 
-      [this kaggle challenge](https://www.kaggle.com/c/nlp-getting-started/overview). Twitter has 
-      become an important communication channel in times of emergency, which is why the kaggle 
+      [this Kaggle challenge](https://www.kaggle.com/c/nlp-getting-started/overview). Twitter has 
+      become an important communication channel in times of emergency, which is why the Kaggle 
       challenge authors' argument for more agencies being interested in programmatically monitoring 
       Twitter for disaster detection (i.e. disaster relief organizations and news agencies). In 
       that competition, data scientists are challenged to build a machine learning model that 
