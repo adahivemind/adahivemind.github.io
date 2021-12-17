@@ -35,7 +35,7 @@ en: &DEFAULT_EN
   timeline:
     title: "Introduction"
     text: "Lorem ipsum timeline"
-    section: timeline
+    section: intro
     # left is the default
     #start_align: "left"
     body1: "Every year, natural disasters happen and often take many lives. After such events, 
